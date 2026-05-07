@@ -1,6 +1,6 @@
 # Utility Forge
 
-A static single-page application providing a collection of developer utility tools. Built with React 18, Bootstrap 5, and Vite.
+A static single-page application providing a collection of developer utility tools. Built with React 18, Bootstrap 5, and Vite. Check out **[live demo](https://johnra74.github.io/utility-forge/)**.
 
 ## Tools
 
@@ -75,23 +75,17 @@ src/
 │       ├── CronGenerator/
 │       └── MillisecondConverter/
 ├── hooks/
-│   └── useClipboard.js         # shared clipboard hook
+│   └── useClipboard.tsx        # shared clipboard hook
 ├── services/                   # pure-function service layer (framework-free)
-│   ├── base64Service.js
-│   ├── cronService.js
-│   ├── jsonService.js
-│   ├── millisecondService.js
-│   ├── urlService.js
-│   └── uuidService.js
+│   ├── base64Service.tsx
+│   ├── cronService.tsx
+│   ├── jsonService.tsx
+│   ├── millisecondService.tsx
+│   ├── urlService.tsx
+│   └── uuidService.tsx
 ├── App.jsx
 └── main.jsx
 ```
-
-## Design Principles
-
-- **SOLID** — each service has a single responsibility; components depend on service abstractions, not implementations.
-- **Pure service layer** — all business logic lives in `src/services/` as plain functions with no React dependency, making them independently testable.
-- **Static-first** — hash-based routing (`HashRouter`) means the app works on any static file host with no server configuration.
 
 ## Tech Stack
 
